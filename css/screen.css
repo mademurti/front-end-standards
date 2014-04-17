@@ -1,0 +1,48 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #fafafa;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  padding-bottom: 5em; }
+
+a, a:visited {
+  color: #6dbce6;
+  text-decoration: none; }
+
+a:hover {
+  color: #53aee4;
+  text-decoration: underline; }
+
+#header, #page {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60rem; }
+  #header:before, #header:after, #page:before, #page:after {
+    content: " ";
+    display: table; }
+  #header:after, #page:after {
+    clear: both; }
+
+#sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  #sidebar:last-child {
+    margin-right: 0; }
+
+#content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  #content:last-child {
+    margin-right: 0; }
