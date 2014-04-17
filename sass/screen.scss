@@ -32,3 +32,7 @@ a:hover {
 #content {
   @include span-columns(9);
 }
+
+.contribute a {
+  color: $highlight-color;
+}
