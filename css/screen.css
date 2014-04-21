@@ -1,24 +1,14 @@
+/*
+Using Bourbon, Neat anda base variables stored on partials/base
+ */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  background-color: #fafafa;
-  color: #333333;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.6;
-  padding-bottom: 5em; }
-
-a, a:visited {
-  color: #6dbce6;
-  text-decoration: none; }
-
-a:hover {
-  color: #53aee4;
-  text-decoration: underline; }
-
+/*
+Layouts first
+ */
 #header, #page {
   *zoom: 1;
   max-width: 68em;
@@ -47,5 +37,27 @@ a:hover {
   #content:last-child {
     margin-right: 0; }
 
+/*
+Appearance later
+ */
+body {
+  background-color: #fafafa;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  padding-bottom: 5em; }
+
+a, a:visited {
+  color: #6dbce6;
+  text-decoration: none; }
+
+a:hover {
+  color: #53aee4;
+  text-decoration: underline; }
+
 .contribute a {
   color: #e85100; }
+
+.information {
+  font-size: 1rem; }

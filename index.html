@@ -23,8 +23,10 @@
         <li><a href="#css">CSS</a></li>
         <li><a href="#javascript">Javascript</a></li>
         <li><a href="#print">Print</a></li>
+        <li><a href="#further">Further readings</a></li>
         <li class="contribute"><a href="https://github.com/priapurnama/front-end-standards">Contribute</a></li>
       </ul>
+      <p class="information">Last updated April 21<sup>st</sup> 2014</p>
     </div>
   </aside><!--#sidebar-->
   <div id="content">
@@ -47,22 +49,23 @@
     <ul>
       <li>Your HTML should look reasonably good even with CSS (and JS) turned off.</li>
       <li>Semantic markup helps.</li>
-      <li>When closing tags for layout, comment appropriately: &lt;!-- #header--&gt;</li>
+      <li>When closing tags for layout, comment appropriately: <code>&lt;/div&gt; &lt;!-- #header--&gt;</code></li>
       <li>Images should have alt attribute.</li>
       <li>All form fields should have tabindex.</li>
       <li>On forms, let CSS handle the sizing. Don't set input size.</li>
       <li>On forms, use <code>&lt;label for="id-of-the-target-input"&gt;</code>.</li>
       <li>During development, it's fine to have multiple CSS files but they should be combined and minified on production.</li>
-      <li>Use <code>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code> because fuck IE. This tells IE to use the latest version possible, not to fall back to compatibility.</li>
+      <li>Use <code>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code>. This tells IE to use the latest version possible, not to fall back to compatibility.</li>
       <li>Include CSS on top, JS on the bottom.</li>
       <li><a href="http://emmet.io/">Emmet</a> is our friend.</li>
     </ul>
 
     <h2 id="css">CSS</h2>
     <ul>
-      <li>Let CSS handle capitalisation of content.</li>
-      <li>CSS statements should never be inline. Blasphemy!</li>
-      <li>CSS files should be included using &lt;link&gt; tag, not the import.</li>
+      <li>Let CSS handle capitalisation of titles.</li>
+      <li>CSS statements should never be inline.</li>
+      <li>CSS files should be included using
+      <link />tag, not the import.</li>
       <li>When not using any frameworks, use <a href="http://necolas.github.io/normalize.css/">normalize.css</a></li>
       <li>Group CSS by: normalize, global styles, layout styles, page styles.</li>
       <li>Global styles should be declared using low priority selectors. E.g. <code>h1</code> instead of <code>body h1</code>.</li>
@@ -91,11 +94,19 @@
 
     <h2 id="print">Print</h2>
     <ul>
-      <li>Include the CSS for print after all the other styles, we aim to override them all. <code>&lt;link rel="stylesheet" type="text/css" media="print" href="print.css"&gt;</code>.</li>
+      <li>Include the CSS for print after all the other styles, we aim to override them all. <code>&lt;link rel="stylesheet" media="print" href="print.css"&gt;</code>.</li>
       <li>Remove unnecessary stuff with <code>display: none</code>. E.g. navigation, forms, anything the user won't be able to interact with.</li>
       <li>Multi-column content should be put inside one.</li>
       <li>Font should be (even more) readable.</li>
       <li>CMS should prepare footnotes, otherwise we can use <a href="http://alistapart.com/article/improvingprint">this</a>.</li>
+    </ul>
+
+    <h2 id="further">Further readings</h2>
+    <ul>
+      <li>Back To The Future of Print <a href="http://24ways.org/2007/back-to-the-future-of-print/">http://24ways.org/2007/back-to-the-future-of-print/</a></li>
+      <li>Isobar: Front-end Code Standards &amp; Best Practices <a href="http://isobar-idev.github.io/code-standards/">http://isobar-idev.github.io/code-standards/</a></li>
+      <li>Code Guide: <a href="http://codeguide.co/">http://codeguide.co/</a></li>
+      <li>WTF, HTML and CSS?: <a href="http://wtfhtmlcss.com/">http://wtfhtmlcss.com/</a></li>
     </ul>
   </div><!--#content-->
 

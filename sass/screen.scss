@@ -1,6 +1,28 @@
+/*
+Using Bourbon, Neat anda base variables stored on partials/base
+ */
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 @import 'partials/base';
+
+/*
+Layouts first
+ */
+
+#header, #page {
+  @include outer-container;
+  max-width: 60rem;
+}
+#sidebar {
+  @include span-columns(3);
+}
+#content {
+  @include span-columns(9);
+}
+
+/*
+Appearance later
+ */
 
 body {
   background-color: $bg-color;
@@ -10,7 +32,6 @@ body {
   line-height: 1.6;
   padding-bottom: 5em;
 }
-
 a, a:visited {
   color: $link-color;
   text-decoration: none;
@@ -19,20 +40,10 @@ a:hover {
   color: $link-hover-color;
   text-decoration: underline;
 }
-
-
-#header, #page {
-  @include outer-container;
-  max-width: 60rem;
-}
-
-#sidebar {
-  @include span-columns(3);
-}
-#content {
-  @include span-columns(9);
-}
-
 .contribute a {
   color: $highlight-color;
+}
+
+.information {
+  font-size: 1rem;
 }
