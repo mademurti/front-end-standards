@@ -49,12 +49,13 @@ Layouts first
     @include span-columns(2);
   }
 }
+
 /*
 On small screen, header and content should have margin around. Header should be centered too.
  */
-#header, #content {
+#content {
   @include media($mobile) {
-    margin: 0.5em;
+    padding: 0.5em;
   }
 }
 #header {
@@ -74,6 +75,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.6;
   padding: 0 0 5em;
+  word-wrap: break-word;
 
   @include media($mobile) {
     margin: 0;

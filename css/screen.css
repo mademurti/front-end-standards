@@ -73,8 +73,8 @@ Layouts first
 On small screen, header and content should have margin around. Header should be centered too.
  */
 @media screen and (max-width: 600px) {
-  #header, #content {
-    margin: 0.5em; } }
+  #content {
+    padding: 0.5em; } }
 
 @media screen and (max-width: 600px) {
   #header {
@@ -89,7 +89,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.6;
-  padding: 0 0 5em; }
+  padding: 0 0 5em;
+  word-wrap: break-word; }
   @media screen and (max-width: 600px) {
     body {
       margin: 0;
