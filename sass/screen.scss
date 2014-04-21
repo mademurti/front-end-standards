@@ -26,6 +26,7 @@ Layouts first
     When screen smaller than 600px, navigation should display as inline and as block.
      */
     background-color: #FFF;
+    font-size: 1rem;
     text-align: center;
 
     .sticky {
@@ -39,6 +40,18 @@ Layouts first
     li {
       display: inline;
       margin-right: 1em;
+    }
+
+    h2 {
+      display: none;
+    }
+
+    #navigation {
+      margin: 0;
+      padding: 0;
+    }
+    .information {
+      display: none;
     }
   }
 }

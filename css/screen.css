@@ -41,6 +41,7 @@ Layouts first
       When screen smaller than 600px, navigation should display as inline and as block.
        */
       background-color: #FFF;
+      font-size: 1rem;
       text-align: center; }
       #sidebar:last-child {
         margin-right: 0; }
@@ -51,7 +52,14 @@ Layouts first
         list-style-type: none outside; }
       #sidebar li {
         display: inline;
-        margin-right: 1em; } }
+        margin-right: 1em; }
+      #sidebar h2 {
+        display: none; }
+      #sidebar #navigation {
+        margin: 0;
+        padding: 0; }
+      #sidebar .information {
+        display: none; } }
 
 #content {
   float: left;
