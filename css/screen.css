@@ -25,9 +25,33 @@ Layouts first
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
+  width: 23.23176%;
+  /*
+  When smaller than 600px, go full width. Same thing applies to content
+   */ }
   #sidebar:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 600px) {
+    #sidebar {
+      float: left;
+      display: block;
+      margin-right: 16.03631%;
+      width: 100%;
+      /*
+      When screen smaller than 600px, navigation should display as inline and as block.
+       */
+      background-color: #FFF;
+      text-align: center; }
+      #sidebar:last-child {
+        margin-right: 0; }
+      #sidebar .sticky {
+        background-color: #FFF;
+        padding: 0.5em; }
+      #sidebar ul {
+        list-style-type: none outside; }
+      #sidebar li {
+        display: inline;
+        margin-right: 1em; } }
 
 #content {
   float: left;
@@ -36,6 +60,25 @@ Layouts first
   width: 74.41059%; }
   #content:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 600px) {
+    #content {
+      float: left;
+      display: block;
+      margin-right: 16.03631%;
+      width: 100%; }
+      #content:last-child {
+        margin-right: 0; } }
+
+/*
+On small screen, header and content should have margin around. Header should be centered too.
+ */
+@media screen and (max-width: 600px) {
+  #header, #content {
+    margin: 0.5em; } }
+
+@media screen and (max-width: 600px) {
+  #header {
+    text-align: center; } }
 
 /*
 Appearance later
@@ -46,7 +89,11 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.6;
-  padding-bottom: 5em; }
+  padding: 0 0 5em; }
+  @media screen and (max-width: 600px) {
+    body {
+      margin: 0;
+      padding: 0; } }
 
 a, a:visited {
   color: #6dbce6;

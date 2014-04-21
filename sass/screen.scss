@@ -15,9 +15,52 @@ Layouts first
 }
 #sidebar {
   @include span-columns(3);
+
+  /*
+  When smaller than 600px, go full width. Same thing applies to content
+   */
+  @include media($mobile) {
+    @include span-columns(2);
+
+    /*
+    When screen smaller than 600px, navigation should display as inline and as block.
+     */
+    background-color: #FFF;
+    text-align: center;
+
+    .sticky {
+      background-color: #FFF;
+      padding: 0.5em;
+    }
+
+    ul {
+      list-style-type: none outside;
+    }
+    li {
+      display: inline;
+      margin-right: 1em;
+    }
+  }
 }
 #content {
   @include span-columns(9);
+
+  @include media($mobile) {
+    @include span-columns(2);
+  }
+}
+/*
+On small screen, header and content should have margin around. Header should be centered too.
+ */
+#header, #content {
+  @include media($mobile) {
+    margin: 0.5em;
+  }
+}
+#header {
+  @include media($mobile) {
+    text-align: center;
+  }
 }
 
 /*
@@ -30,7 +73,12 @@ body {
   font-family: $sans-serif-font;
   font-size: 1.4rem;
   line-height: 1.6;
-  padding-bottom: 5em;
+  padding: 0 0 5em;
+
+  @include media($mobile) {
+    margin: 0;
+    padding: 0;
+  }
 }
 a, a:visited {
   color: $link-color;
