@@ -25,12 +25,12 @@ Layouts first
     /*
     When screen smaller than 600px, navigation should display as inline and as block.
      */
-    background-color: #FFF;
     font-size: 1rem;
     text-align: center;
 
     .sticky {
-      background-color: #FFF;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
       padding: 0.5em;
     }
 
