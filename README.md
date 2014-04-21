@@ -1,3 +1,3 @@
 # Front-end development standards
 
-A document containing front-end development standards. (Doh).
+[Front-end development standards document](http://priapurnama.github.io/front-end-standards/).
